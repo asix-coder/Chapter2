@@ -27,7 +27,14 @@ namespace Chapter2
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-
+            // to jest komentarz
+            String name = "Quentin";
+            int x = 3;
+            x = x * 17;
+            double d = Math.PI / 2;
+            myLabel.Text = "nazwa to " + name
+                + "\nx jest rowne " + x
+                + "\nd jest równe " + d;
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
