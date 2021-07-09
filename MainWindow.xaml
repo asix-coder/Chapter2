@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:Chapter2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Style x:Key="BodyTextStyle" TargetType="{x:Type TextBlock}"/>
+    </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -20,7 +23,7 @@
         <Button x:Name="button2" Content="If/Else" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Button x:Name="button3" Content="Another conditional test" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center"/>
         <Button x:Name="button4" Content="A loop" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center"/>
-        <TextBlock HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="myLabel" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" Grid.ColumnSpan="2" Style="{DynamicResource BodyTextStyle}"/>
 
     </Grid>
 </Window>
